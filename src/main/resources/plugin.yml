@@ -1,0 +1,10 @@
+name : AutoSave
+main : hancho.plugin.nukkt.autosave.AutoSave
+author : Hancho
+version : 1.0.0
+api : [1.0.0]
+
+commands:
+  서버저장:
+    description: 플러그인 데이터를 저장합니다.
+    permission : "op"
