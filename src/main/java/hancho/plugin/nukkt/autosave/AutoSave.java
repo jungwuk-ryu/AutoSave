@@ -2,7 +2,6 @@ package hancho.plugin.nukkt.autosave;
 
 import cn.nukkit.command.Command;
 import cn.nukkit.command.CommandSender;
-import cn.nukkit.plugin.Plugin;
 import cn.nukkit.plugin.PluginBase;
 import cn.nukkit.scheduler.AsyncTask;
 
@@ -38,12 +37,6 @@ public class AutoSave extends PluginBase {
             this.getServer().broadcastMessage("§l§o§c===========§f이 작업은 서버 재부팅을 대신합니다§c===========");
             Save save = new Save(this);
             save.start();
-        }else if(command.getName().equals("월드에딧리로드")){
-            this.getServer().shutdown();
-            Plugin p = this.getServer().getPluginManager().getPlugin("FastAsyncWorldEdit");
-            this.getServer().getPluginManager().disablePlugin(p);
-            Plugin newPlugin = this.getServer().getPluginManager().loadPlugin("/root/season3/plugins/FastAsyncWorldEdit.jar");
-            this.getServer().getPluginManager().enablePlugin(newPlugin);
         }
         return true;
     }

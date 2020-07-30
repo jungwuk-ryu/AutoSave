@@ -10,6 +10,7 @@ import hancho.Auction.Auction;
 import hancho.ChestLog.ChestLog;
 import hancho.Hshop.Hshop;
 import hancho.nukkit.plugin.commandsign.commandsign;
+import hancho.plugin.keyWords.KeyWords;
 import hancho.plugin.nukkit.KkutuInNukkit.KkutuInNukkit;
 import hancho.plugin.nukkit.announcer.Announcer;
 import hancho.plugin.nukkit.autocrop.AutoCrop;
@@ -36,7 +37,7 @@ import solo.sololand.Main;
 import statusMessage.StatusMessage;
 
 public class Save {
-    public static final int COUNT = 35;
+    public static final int COUNT = 36;
     public AutoSave autoSave;
     private Server server;
     private int needSaveCount = COUNT;
@@ -410,6 +411,15 @@ public class Save {
             this.server.getLogger().warning("CustomResourcePack 누락");
         }
 
+        /*ss*/
+        KeyWords keyWords = (KeyWords) this.server.getPluginManager().getPlugin("KeyWords");
+        if(keyWords != null){
+            this.server.getLogger().warning("keyWords");
+            keyWords.save();
+            this.broadcast();
+        }else{
+            this.server.getLogger().warning("keyWords 누락");
+        }
         this.server.broadcastMessage("§o§3서버 저장 완료");
     }
 }
