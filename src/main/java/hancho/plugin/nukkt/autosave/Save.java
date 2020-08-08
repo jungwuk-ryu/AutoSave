@@ -412,7 +412,7 @@ public class Save {
         }
 
         /*ss*/
-        KeyWords keyWords = (KeyWords) this.server.getPluginManager().getPlugin("KeyWords");
+        KeyWords keyWords = (KeyWords) this.server.getPluginManager().getPlugin("keyWords");
         if(keyWords != null){
             this.server.getLogger().warning("keyWords");
             keyWords.save();
