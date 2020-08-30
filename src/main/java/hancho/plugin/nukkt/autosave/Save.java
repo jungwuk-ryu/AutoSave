@@ -2,6 +2,8 @@ package hancho.plugin.nukkt.autosave;
 
 import banMaster.BanMaster;
 import bookLibrary.BookLibrary;
+import cn.hancho.blocknametag.BlockNameTagManager;
+import cn.hancho.simplegambling.SimpleGambling;
 import cn.nukkit.Player;
 import cn.nukkit.Server;
 import co.hancho.customResourcePack.CustomResourcePack;
@@ -25,6 +27,7 @@ import hancho.plugin.nukkit.rewardSign.RewardSign;
 import hancho.plugin.nukkit.showhealth.showhealth;
 import hancho.plugin.nukkit.sign.Sign;
 import hancho.plugin.nukkit.simpleController.simpleController;
+import hancho.plugin.nukkit.soundManager.SoundManager;
 import hancho.todayDB.TodayDB;
 import hcDiscordBot.HcDiscordBot;
 import logmaster.logmaster;
@@ -37,7 +40,7 @@ import solo.sololand.Main;
 import statusMessage.StatusMessage;
 
 public class Save {
-    public static final int COUNT = 36;
+    public static final int COUNT = 39;
     public AutoSave autoSave;
     private Server server;
     private int needSaveCount = COUNT;
@@ -420,6 +423,34 @@ public class Save {
         }else{
             this.server.getLogger().warning("keyWords 누락");
         }
+
+        SimpleGambling simpleGambling = (SimpleGambling) this.server.getPluginManager().getPlugin("SimpleGambling");
+        if(simpleGambling != null){
+            this.server.getLogger().warning("simpleGambling");
+            simpleGambling.save();
+            this.broadcast();
+        }else{
+            this.server.getLogger().warning("simpleGambling 누락");
+        }
+
+        BlockNameTagManager blockNameTagManager = (BlockNameTagManager) this.server.getPluginManager().getPlugin("BlockNameTagManager");
+        if(blockNameTagManager != null){
+            this.server.getLogger().warning("BlockNameTagManager");
+            blockNameTagManager.save();
+            this.broadcast();
+        }else{
+            this.server.getLogger().warning("blockNameTagManager 누락");
+        }
+
+        SoundManager soundManager = (SoundManager) this.server.getPluginManager().getPlugin("SoundManager");
+        if(soundManager != null){
+            this.server.getLogger().warning("soundManager");
+            soundManager.save();
+            this.broadcast();
+        }else{
+            this.server.getLogger().warning("soundManager 누락");
+        }
+
         this.server.broadcastMessage("§o§3서버 저장 완료");
     }
 }
