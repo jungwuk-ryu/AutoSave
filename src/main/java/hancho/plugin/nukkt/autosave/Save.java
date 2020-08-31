@@ -22,7 +22,7 @@ import hancho.plugin.nukkit.connectionTime.ConnectionTime;
 import hancho.plugin.nukkit.dashblock.dashblock;
 import hancho.plugin.nukkit.hwarp.hwarp;
 import hancho.plugin.nukkit.mailbox.mailbox;
-import hancho.plugin.nukkit.particlemanager.particleManager;
+import hancho.plugin.nukkit.particlemanager.ParticleManager;
 import hancho.plugin.nukkit.rewardSign.RewardSign;
 import hancho.plugin.nukkit.showhealth.showhealth;
 import hancho.plugin.nukkit.sign.Sign;
@@ -319,7 +319,7 @@ public class Save {
 
 
         /*ss*/
-        particleManager pm = (particleManager) this.server.getPluginManager().getPlugin("particleManager");
+        ParticleManager pm = (ParticleManager) this.server.getPluginManager().getPlugin("ParticleManager");
         if(pm != null){
             this.server.getLogger().warning("particleManager");
             pm.save(false);
