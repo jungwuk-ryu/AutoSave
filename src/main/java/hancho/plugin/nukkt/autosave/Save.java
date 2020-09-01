@@ -19,7 +19,7 @@ import hancho.plugin.nukkit.autocrop.AutoCrop;
 import hancho.plugin.nukkit.check.check;
 import hancho.plugin.nukkit.commandshortcut.CommandShortcut;
 import hancho.plugin.nukkit.connectionTime.ConnectionTime;
-import hancho.plugin.nukkit.dashblock.dashblock;
+import hancho.plugin.nukkit.dashblock.DashBlock;
 import hancho.plugin.nukkit.hwarp.hwarp;
 import hancho.plugin.nukkit.mailbox.mailbox;
 import hancho.plugin.nukkit.particlemanager.ParticleManager;
@@ -341,10 +341,10 @@ public class Save {
 
 
         /*ss*/
-        dashblock db = (dashblock) this.server.getPluginManager().getPlugin("dashblock");
+        DashBlock db = (DashBlock) this.server.getPluginManager().getPlugin("DashBlock");
         if(db != null){
             this.server.getLogger().warning("dashblock");
-            db.onDisable();
+            db.save();
             this.broadcast();
         }else{
             this.server.getLogger().warning("dashblock 누락");
