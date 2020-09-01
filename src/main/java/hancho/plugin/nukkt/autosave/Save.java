@@ -30,7 +30,7 @@ import hancho.plugin.nukkit.simpleController.simpleController;
 import hancho.plugin.nukkit.soundManager.SoundManager;
 import hancho.todayDB.TodayDB;
 import hcDiscordBot.HcDiscordBot;
-import logmaster.logmaster;
+import logmaster.LogMaster;
 import org.hancho.nukkit.plugins.SizeShop.SizeShop;
 import org.hancho.plugin.nukkit.doorlock.DoorLock;
 import org.hancho.plugin.nukkit.informations.Informations;
@@ -164,7 +164,7 @@ public class Save {
             this.server.getLogger().warning("TodayDB 누락");
         }
         /*ss*/
-        logmaster log = (logmaster) this.server.getPluginManager().getPlugin("logmaster");
+        LogMaster log = (LogMaster) this.server.getPluginManager().getPlugin("LogMaster");
         if(log != null){
             this.server.getLogger().warning("logmaster");
             log.save(false);
