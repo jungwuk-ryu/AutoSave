@@ -2,8 +2,8 @@ package hancho.plugin.nukkt.autosave;
 
 import banMaster.BanMaster;
 import bookLibrary.BookLibrary;
-import cn.hancho.blocknametag.BlockNameTagManager;
-import cn.hancho.simplegambling.SimpleGambling;
+import com.hancho.blocknametag.BlockNameTagManager;
+import com.hancho.simplegambling.SimpleGambling;
 import cn.nukkit.Player;
 import cn.nukkit.Server;
 import co.hancho.customResourcePack.CustomResourcePack;

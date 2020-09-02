@@ -250,13 +250,13 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>cn.hancho.simplegambling</groupId>
+            <groupId>com.hancho.simplegambling</groupId>
             <artifactId>SimpleGambling</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>cn.hancho.blocknametag</groupId>
+            <groupId>com.hancho.blocknametag</groupId>
             <artifactId>BlockNameTag</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>provided</scope>
