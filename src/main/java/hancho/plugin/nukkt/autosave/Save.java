@@ -51,9 +51,9 @@ public class Save {
     }
 
     public void broadcast(){
-        server.getLogger().info("§l§o저장 §b" + (this.needSaveCount--) + "§f개 남음");
+        //server.getLogger().info("§l§o저장 §b" + (this.needSaveCount--) + "§f개 남음");
         for(Player player : this.server.getOnlinePlayers().values()){
-            player.sendTip("§l§o저장 §b" + (this.needSaveCount) + "§f개 남음");
+            player.sendTip("§l§o저장 §b" + (this.needSaveCount --) + "§f개 남음");
         }
     }
 
