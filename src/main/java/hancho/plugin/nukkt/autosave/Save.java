@@ -63,7 +63,7 @@ public class Save {
         /*Popularity*/
         Popularity plugin = (Popularity) this.server.getPluginManager().getPlugin("Popularity");
         if(plugin != null){
-            this.server.getLogger().warning("Popularity");
+            //this.server.getLogger().warning("Popularity");
             plugin.save(false);
             this.broadcast();
         }else{
@@ -73,7 +73,7 @@ public class Save {
         /*Sponge Mine*/
         simpleController simpleController = (simpleController) this.server.getPluginManager().getPlugin("simpleController");
         if(simpleController != null){
-            this.server.getLogger().warning("simpleController");
+            //this.server.getLogger().warning("simpleController");
             simpleController.save(false);
             this.broadcast();
         }else{
@@ -83,7 +83,7 @@ public class Save {
         /*showhealth*/
         showhealth sh = (showhealth) this.server.getPluginManager().getPlugin("showhealth");
         if(sh != null){
-            this.server.getLogger().warning("showhealth");
+            //this.server.getLogger().warning("showhealth");
             sh.save();
             sh.prepare();
             this.broadcast();
@@ -94,7 +94,7 @@ public class Save {
         /*ss*/
         DoorLock doorLock = (DoorLock) this.server.getPluginManager().getPlugin("DoorLock");
         if(doorLock != null){
-            this.server.getLogger().warning("DoorLock");
+            //this.server.getLogger().warning("DoorLock");
             doorLock.save(false);
             this.broadcast();
         }else{
@@ -103,7 +103,7 @@ public class Save {
         /*ss*/
         Main sololand = (Main) this.server.getPluginManager().getPlugin("SOLOLand");
         if(sololand != null){
-            this.server.getLogger().warning("SOLOLand");
+            //this.server.getLogger().warning("SOLOLand");
             sololand.saveAllWorlds(false);
             this.broadcast();
         }else{
@@ -112,7 +112,7 @@ public class Save {
         /*ss*/
         commandsign cs = (commandsign) this.server.getPluginManager().getPlugin("commandsign");
         if(cs != null){
-            this.server.getLogger().warning("commandsign");
+            //this.server.getLogger().warning("commandsign");
             cs.save();
             this.broadcast();
         }else{
@@ -121,7 +121,7 @@ public class Save {
         /*ss*/
         mailbox mb = (mailbox) this.server.getPluginManager().getPlugin("mailbox");
         if(mb != null){
-            this.server.getLogger().warning("mailbox");
+            //this.server.getLogger().warning("mailbox");
             mb.save(false);
             this.broadcast();
         }else{
@@ -130,7 +130,7 @@ public class Save {
         /*ss*/
         hwarp warp = (hwarp) this.server.getPluginManager().getPlugin("hwarp");
         if(warp != null){
-            this.server.getLogger().warning("hwarp");
+            //this.server.getLogger().warning("hwarp");
             warp.save(false);
             this.broadcast();
         }else{
@@ -139,7 +139,7 @@ public class Save {
         /*ss*/
         KkutuInNukkit kkutu = (KkutuInNukkit) this.server.getPluginManager().getPlugin("KkutuInNukkit");
         if(kkutu != null){
-            this.server.getLogger().warning("KkutuInNukkit");
+            //this.server.getLogger().warning("KkutuInNukkit");
             kkutu.save(false);
             this.broadcast();
         }else{
@@ -148,7 +148,7 @@ public class Save {
         /*ss*/
         kdr.Main kdr = (kdr.Main) this.server.getPluginManager().getPlugin("KDR");
         if(kdr != null){
-            this.server.getLogger().warning("KDR");
+            //this.server.getLogger().warning("KDR");
             kdr.onDisable();
             this.broadcast();
         }else{
@@ -157,7 +157,7 @@ public class Save {
         /*ss*/
         TodayDB todayDB = (TodayDB) this.server.getPluginManager().getPlugin("TodayDB");
         if(todayDB != null){
-            this.server.getLogger().warning("TodayDB");
+            //this.server.getLogger().warning("TodayDB");
             todayDB.save(false);
             this.broadcast();
         }else{
@@ -166,7 +166,7 @@ public class Save {
         /*ss*/
         LogMaster log = (LogMaster) this.server.getPluginManager().getPlugin("LogMaster");
         if(log != null){
-            this.server.getLogger().warning("logmaster");
+            //this.server.getLogger().warning("logmaster");
             log.save(false);
             this.broadcast();
         }else{
@@ -175,7 +175,7 @@ public class Save {
         /*ss*/
         Auction auction = (Auction) this.server.getPluginManager().getPlugin("Auction");
         if(auction != null){
-            this.server.getLogger().warning("Auction");
+            //this.server.getLogger().warning("Auction");
             auction.save(false);
             this.broadcast();
         }else{
@@ -184,7 +184,7 @@ public class Save {
         /*ss*/
         BanMaster banMaster = (BanMaster) this.server.getPluginManager().getPlugin("banMaster");
         if(banMaster != null){
-            this.server.getLogger().warning("BanMaster");
+            //this.server.getLogger().warning("BanMaster");
             banMaster.save(false);
             this.broadcast();
         }else{
@@ -193,7 +193,7 @@ public class Save {
         /*ss*/
         Hshop hshop = (Hshop) this.server.getPluginManager().getPlugin("Hshop");
         if(hshop != null){
-            this.server.getLogger().warning("hshop");
+            //this.server.getLogger().warning("hshop");
             hshop.save(false);
             this.broadcast();
         }else{
@@ -203,7 +203,7 @@ public class Save {
         /*ss*/
         StatusMessage statusMessage = (StatusMessage) this.server.getPluginManager().getPlugin("StatusMessage");
         if(statusMessage != null){
-            this.server.getLogger().warning("StatusMessage");
+            //this.server.getLogger().warning("StatusMessage");
             statusMessage.save();
             this.broadcast();
         }else{
@@ -213,7 +213,7 @@ public class Save {
         /*ss*/
         Announcer announcer = (Announcer) this.server.getPluginManager().getPlugin("Announcer");
         if(announcer != null){
-            this.server.getLogger().warning("announcer");
+            //this.server.getLogger().warning("announcer");
             announcer.save(false);
             this.broadcast();
         }else{
@@ -223,7 +223,7 @@ public class Save {
         /*ss*/
         check ck = (check) this.server.getPluginManager().getPlugin("check");
         if(ck != null){
-            this.server.getLogger().warning("check");
+            //this.server.getLogger().warning("check");
             ck.save(false);
             this.broadcast();
         }else{
@@ -233,7 +233,7 @@ public class Save {
         /*ss*/
         solo.solonotification.Main noti = (solo.solonotification.Main) this.server.getPluginManager().getPlugin("SOLONotification");
         if(noti != null){
-            this.server.getLogger().warning("solonotification");
+            //this.server.getLogger().warning("solonotification");
             noti.onDisable();
             this.broadcast();
         }else{
@@ -244,7 +244,7 @@ public class Save {
         /*ss*/
         HFriend friend = (HFriend) this.server.getPluginManager().getPlugin("HFriend");
         if(friend != null){
-            this.server.getLogger().warning("HFriend");
+            //this.server.getLogger().warning("HFriend");
             friend.save(false);
             this.broadcast();
         }else{
@@ -255,7 +255,7 @@ public class Save {
         /*ss*/
         HcDiscordBot discordBot = (HcDiscordBot) this.server.getPluginManager().getPlugin("HcDiscordBot");
         if(discordBot != null){
-            this.server.getLogger().warning("HcDiscordBot");
+            //this.server.getLogger().warning("HcDiscordBot");
             discordBot.save(false);
             this.broadcast();
         }else{
@@ -266,7 +266,7 @@ public class Save {
         /*ss*/
         CommandShortcut shortcut = (CommandShortcut) this.server.getPluginManager().getPlugin("CommandShortcut");
         if(shortcut != null){
-            this.server.getLogger().warning("CommandShortcut");
+            //this.server.getLogger().warning("CommandShortcut");
             shortcut.save();
             this.broadcast();
         }else{
@@ -277,7 +277,7 @@ public class Save {
         /*ss*/
         Sign sign = (Sign) this.server.getPluginManager().getPlugin("Sign");
         if(sign != null){
-            this.server.getLogger().warning("sign");
+            //this.server.getLogger().warning("sign");
             sign.save();
             this.broadcast();
         }else{
@@ -288,7 +288,7 @@ public class Save {
         /*ss*/
         RewardSign rewardSign = (RewardSign) this.server.getPluginManager().getPlugin("RewardSign");
         if(rewardSign != null){
-            this.server.getLogger().warning("rewardSign");
+            //this.server.getLogger().warning("rewardSign");
             rewardSign.save(false);
             this.broadcast();
         }else{
@@ -299,7 +299,7 @@ public class Save {
         /*ss*/
         RankManager rankManager = (RankManager) this.server.getPluginManager().getPlugin("RankManager");
         if(rankManager != null){
-            this.server.getLogger().warning("rankManager");
+            //this.server.getLogger().warning("rankManager");
             rankManager.save(false);
             this.broadcast();
         }else{
@@ -310,7 +310,7 @@ public class Save {
         /*ss*/
         solo.soloportal.Main portal = (solo.soloportal.Main) this.server.getPluginManager().getPlugin("SOLOPortal");
         if(portal != null){
-            this.server.getLogger().warning("soloportal");
+            //this.server.getLogger().warning("soloportal");
             portal.onDisable();
             this.broadcast();
         }else{
@@ -321,7 +321,7 @@ public class Save {
         /*ss*/
         ParticleManager pm = (ParticleManager) this.server.getPluginManager().getPlugin("ParticleManager");
         if(pm != null){
-            this.server.getLogger().warning("particleManager");
+            //this.server.getLogger().warning("particleManager");
             pm.save(false);
             this.broadcast();
         }else{
@@ -332,7 +332,7 @@ public class Save {
         /*ss*/
         ChestLog chestLog = (ChestLog) this.server.getPluginManager().getPlugin("ChestLog");
         if(chestLog != null){
-            this.server.getLogger().warning("chestLog");
+            //this.server.getLogger().warning("chestLog");
             chestLog.save(false);
             this.broadcast();
         }else{
@@ -343,7 +343,7 @@ public class Save {
         /*ss*/
         DashBlock db = (DashBlock) this.server.getPluginManager().getPlugin("DashBlock");
         if(db != null){
-            this.server.getLogger().warning("dashblock");
+            //this.server.getLogger().warning("dashblock");
             db.save();
             this.broadcast();
         }else{
@@ -354,7 +354,7 @@ public class Save {
         /*ss*/
         AutoCrop autoCrop = (AutoCrop) this.server.getPluginManager().getPlugin("AutoCrop");
         if(autoCrop != null){
-            this.server.getLogger().warning("autoCrop");
+            //this.server.getLogger().warning("autoCrop");
             autoCrop.save();
             this.broadcast();
         }else{
@@ -365,7 +365,7 @@ public class Save {
         /*ss*/
         BookLibrary bookLibrary = (BookLibrary) this.server.getPluginManager().getPlugin("BookLibrary");
         if(bookLibrary != null){
-            this.server.getLogger().warning("bookLibrary");
+            //this.server.getLogger().warning("bookLibrary");
             bookLibrary.save();
             this.broadcast();
         }else{
@@ -376,7 +376,7 @@ public class Save {
         /*ss*/
         Informations informations = (Informations) this.server.getPluginManager().getPlugin("Informations");
         if(informations != null){
-            this.server.getLogger().warning("informations");
+            //this.server.getLogger().warning("informations");
             informations.save(false);
             this.broadcast();
         }else{
@@ -387,7 +387,7 @@ public class Save {
         /*ss*/
         SizeShop sizeShop = (SizeShop) this.server.getPluginManager().getPlugin("SizeShop");
         if(sizeShop != null){
-            this.server.getLogger().warning("sizeShop");
+            //this.server.getLogger().warning("sizeShop");
             sizeShop.save(false);
             this.broadcast();
         }else{
@@ -397,7 +397,7 @@ public class Save {
         /*ss*/
         ConnectionTime connectionTime = (ConnectionTime) this.server.getPluginManager().getPlugin("ConnectionTime");
         if(connectionTime != null){
-            this.server.getLogger().warning("ConnectionTime");
+            //this.server.getLogger().warning("ConnectionTime");
             connectionTime.save(false);
             this.broadcast();
         }else{
@@ -407,7 +407,7 @@ public class Save {
         /*ss*/
         CustomResourcePack customResourcePack = (CustomResourcePack) this.server.getPluginManager().getPlugin("CustomResourcePack");
         if(customResourcePack != null){
-            this.server.getLogger().warning("CustomResourcePack");
+            //this.server.getLogger().warning("CustomResourcePack");
             customResourcePack.save();
             this.broadcast();
         }else{
@@ -417,7 +417,7 @@ public class Save {
         /*ss*/
         KeyWords keyWords = (KeyWords) this.server.getPluginManager().getPlugin("keyWords");
         if(keyWords != null){
-            this.server.getLogger().warning("keyWords");
+            //this.server.getLogger().warning("keyWords");
             keyWords.save();
             this.broadcast();
         }else{
@@ -426,7 +426,7 @@ public class Save {
 
         SimpleGambling simpleGambling = (SimpleGambling) this.server.getPluginManager().getPlugin("SimpleGambling");
         if(simpleGambling != null){
-            this.server.getLogger().warning("simpleGambling");
+            //this.server.getLogger().warning("simpleGambling");
             simpleGambling.save();
             this.broadcast();
         }else{
@@ -435,7 +435,7 @@ public class Save {
 
         BlockNameTagManager blockNameTagManager = (BlockNameTagManager) this.server.getPluginManager().getPlugin("BlockNameTagManager");
         if(blockNameTagManager != null){
-            this.server.getLogger().warning("BlockNameTagManager");
+            //this.server.getLogger().warning("BlockNameTagManager");
             blockNameTagManager.save();
             this.broadcast();
         }else{
@@ -444,13 +444,16 @@ public class Save {
 
         SoundManager soundManager = (SoundManager) this.server.getPluginManager().getPlugin("SoundManager");
         if(soundManager != null){
-            this.server.getLogger().warning("soundManager");
+            //this.server.getLogger().warning("soundManager");
             soundManager.save();
             this.broadcast();
         }else{
             this.server.getLogger().warning("soundManager 누락");
         }
-
-        this.server.broadcastMessage("§o§3서버 저장 완료");
+        
+        for(Player player : this.server.getOnlinePlayers().values()){
+            player.sendTip("§o§3서버 저장 완료");
+        }
+        this.server.getLogger().warning("서버 저장 완료");
     }
 }
