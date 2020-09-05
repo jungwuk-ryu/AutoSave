@@ -3,6 +3,7 @@ package hancho.plugin.nukkt.autosave;
 import banMaster.BanMaster;
 import bookLibrary.BookLibrary;
 import com.hancho.blocknametag.BlockNameTagManager;
+import com.hancho.hguild.HGuild.HGuild;
 import com.hancho.simplegambling.SimpleGambling;
 import cn.nukkit.Player;
 import cn.nukkit.Server;
@@ -136,7 +137,7 @@ public class Save {
         }else{
             this.server.getLogger().warning("hwarp 누락");
         }
-        /*ss*/
+        /*ss*//*
         KkutuInNukkit kkutu = (KkutuInNukkit) this.server.getPluginManager().getPlugin("KkutuInNukkit");
         if(kkutu != null){
             //this.server.getLogger().warning("KkutuInNukkit");
@@ -144,7 +145,7 @@ public class Save {
             this.broadcast();
         }else{
             this.server.getLogger().warning("KkutuInNukkit 누락");
-        }
+        }*/
         /*ss*/
         kdr.Main kdr = (kdr.Main) this.server.getPluginManager().getPlugin("KDR");
         if(kdr != null){
@@ -449,6 +450,15 @@ public class Save {
             this.broadcast();
         }else{
             this.server.getLogger().warning("soundManager 누락");
+        }
+
+        HGuild hGuild = (HGuild) this.server.getPluginManager().getPlugin("HGuild");
+        if(hGuild != null){
+            //this.server.getLogger().warning("soundManager");
+            hGuild.save();
+            this.broadcast();
+        }else{
+            this.server.getLogger().warning("hGuild 누락");
         }
         
         for(Player player : this.server.getOnlinePlayers().values()){
