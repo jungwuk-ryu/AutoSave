@@ -3,6 +3,7 @@ package hancho.plugin.nukkt.autosave;
 import banMaster.BanMaster;
 import bookLibrary.BookLibrary;
 import com.hancho.blocknametag.BlockNameTagManager;
+import com.hancho.hcontents.HContents;
 import com.hancho.hguild.HGuild.HGuild;
 import com.hancho.simplegambling.SimpleGambling;
 import cn.nukkit.Player;
@@ -41,7 +42,7 @@ import solo.sololand.Main;
 import statusMessage.StatusMessage;
 
 public class Save {
-    public static final int COUNT = 39;
+    public static final int COUNT = 40;
     public AutoSave autoSave;
     private Server server;
     private int needSaveCount = COUNT;
@@ -460,6 +461,15 @@ public class Save {
             this.broadcast();
         }else{
             this.server.getLogger().warning("hGuild 누락");
+        }
+
+        HContents contents = (HContents) this.server.getPluginManager().getPlugin("HContents");
+        if(contents != null){
+            //this.server.getLogger().warning("soundManager");
+            contents.save();
+            this.broadcast();
+        }else{
+            this.server.getLogger().warning("contents 누락");
         }
         
         for(Player player : this.server.getOnlinePlayers().values()){
