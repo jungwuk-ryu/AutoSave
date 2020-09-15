@@ -5,6 +5,7 @@ import bookLibrary.BookLibrary;
 import com.hancho.blocknametag.BlockNameTagManager;
 import com.hancho.hcontents.HContents;
 import com.hancho.hguild.HGuild.HGuild;
+import com.hancho.information.Information;
 import com.hancho.simplegambling.SimpleGambling;
 import cn.nukkit.Player;
 import cn.nukkit.Server;
@@ -35,7 +36,6 @@ import hcDiscordBot.HcDiscordBot;
 import logmaster.LogMaster;
 import org.hancho.nukkit.plugins.SizeShop.SizeShop;
 import org.hancho.plugin.nukkit.doorlock.DoorLock;
-import org.hancho.plugin.nukkit.informations.Informations;
 import popularity.Popularity;
 import rankManager.RankManager;
 import solo.sololand.Main;
@@ -377,10 +377,10 @@ public class Save {
 
 
         /*ss*/
-        Informations informations = (Informations) this.server.getPluginManager().getPlugin("Informations");
-        if(informations != null){
+        Information information = (Information) this.server.getPluginManager().getPlugin("Information");
+        if(information != null){
             //this.server.getLogger().warning("informations");
-            informations.save(false);
+            information.save(false);
             this.broadcast();
         }else{
             this.server.getLogger().warning("informations 누락");
