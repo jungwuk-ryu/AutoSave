@@ -5,6 +5,7 @@ version : 1.0.0
 api : [1.0.0]
 
 commands:
-  서버저장:
-    description: 플러그인 데이터를 저장합니다.
+  autosave:
+    description: 서버 자동저장 시스템 명령어
     permission : "op"
+    aliases: [as]
