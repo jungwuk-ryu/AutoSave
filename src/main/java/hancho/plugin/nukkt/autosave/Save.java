@@ -47,7 +47,7 @@ public class Save {
                 } catch (Exception e) {
                     this.server.getLogger().error("", e);
                 }
-                return;
+                continue;
             }
 
             for (Method method : plugin.getClass().getDeclaredMethods()) {
