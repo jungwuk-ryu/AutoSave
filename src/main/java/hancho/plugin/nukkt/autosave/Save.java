@@ -21,7 +21,7 @@ public class Save {
 
     public void debug(String msg){
         if(!debugMode) return;
-        this.server.getLogger().info("§7§o " + msg);
+        this.server.getLogger().info("§7 " + msg);
     }
 
     public void start() {
