@@ -11,9 +11,11 @@ import java.util.Set;
 public class Save {
     private Server server;
     private final boolean debugMode;
+    private final String tipMsg;
 
     public Save(){
         this.debugMode = AutoSave.DEBUG_MODE;
+        this.tipMsg = AutoSave.TIP_MESSAGE;
         this.server = Server.getInstance();
     }
 
@@ -25,15 +27,17 @@ public class Save {
     public void start() {
         Map<String, Plugin> plugins = this.server.getPluginManager().getPlugins();
         Set<String> keySet = plugins.keySet();
-        int pluginCount = plugins.size() + 1;
+        int leftPluginCount = keySet.size() + 1;
 
         for(String name : keySet){
             Plugin plugin = plugins.get(name);
             boolean isSaveable = false;
-            pluginCount --;
+            leftPluginCount--;
 
-            for(Player player : this.server.getOnlinePlayers().values()){
-                player.sendTip("§l§o저장 §b" + pluginCount + "§f개 남음");
+            if(AutoSave.ENABLE_TIP) {
+                for (Player player : this.server.getOnlinePlayers().values()) {
+                    player.sendTip(tipMsg.replace("%count%", Integer.toString(leftPluginCount)));
+                }
             }
 
             if(AutoSave.INVOKE_ON_DISABLE.contains(plugin.getName())){  // onDisable 메소드 실행
@@ -67,9 +71,9 @@ public class Save {
                     }
                 }
             }
-            if(!isSaveable) this.debug(plugin.getName() + " : §c저장되지 않음");
+            if(!isSaveable) this.debug(plugin.getName() + " : §cNot Saved");
         }
 
-        this.server.getLogger().warning("서버 저장 완료");
+        this.server.getLogger().warning("Save Complete");
     }
 }
