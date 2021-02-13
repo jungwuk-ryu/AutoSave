@@ -3,7 +3,7 @@
 #### Please back up your server before using this plugin.
 This plugin will save all plugins on your server without restarting server.  
 
-## How is it works
+## How does it work?
 - It will detect "save" method on plugin and invoke it.    
 - You can add a plugin from config.yml to invoke_OnDisable if your plugin saves when the server stops.
 
