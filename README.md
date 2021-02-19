@@ -3,9 +3,12 @@
 #### Please back up your server before using this plugin.
 This plugin will save all plugins on your server without restarting server.  
 
-## How does it work?
+## How it works?
 - It will detect "save" method on plugin and invoke it.    
 - You can add a plugin from config.yml to invoke_OnDisable if your plugin saves when the server stops.
+
+## DOWNLOAD
+Please check [here](https://github.com/jungwuk-ryu/Nukkit-AutoSave-Plugin/releases) or [Cloudburst resource](https://cloudburstmc.org/resources/autosave.656/)
 
 ## Command
 ```
